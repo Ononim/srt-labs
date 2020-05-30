@@ -35,8 +35,13 @@ export default function App() {
         <Text style={styles.text}>Labowork 3.3</Text>
         <Text style={styles.text}>Genetic Algorithm</Text>
       </View>
-	  alert(all_manipulations);
-      <TextInput      
+	 <TextInput      
+        style={styles.input}
+        placeholder="'a' value"
+        keyboardType='number-pad'
+        onChangeText={text => onChange(text, 'a')}
+        value = {maipulations.a}/>
+      <TextInput
         style={styles.input}
         placeholder="'a' value"
         keyboardType='number-pad'
